@@ -1,0 +1,77 @@
+<!doctype html>
+<html>
+<head>
+<h1 align="center">Web Application for Database Query</h1>
+<h6 align="center"> _________________________________________________</h6>
+<title>Database Project</title>
+</head>
+
+
+
+
+<!This is the part which sets Query 1 on the front end>
+<body>
+<form name="pyform" method="POST" action="/cgi-bin/sailorsDB/query1.py">
+	<h3> Query 1: Given the name of a part, retrieve the information about each supplier who supplied it. This information can be any subset of the supplier's id, supplier's name, address, and the cost the supplier charged for that part. </h3>  
+	<h3>Please enter a valid parts name for "Query 1" </h3>
+	<input type="text" name="fname" />
+	<input type="submit" name="submit" value="Submit" />
+</form>
+</body>
+<br><br>
+
+
+
+
+<!This is the part which sets Query 2 on the front end>
+<body>
+<form name="pyform" method="POST" action="/cgi-bin/sailorsDB/query2.py">
+  <h3>Query 2: Given the cost, retrieve the names of the suppliers who have ever supplied a part with that cost or higher.</h3>
+  <h3>Please enter a cost for "Query 2"</h3>
+  <input type="text" name="cost" />
+  <input type="submit" name="submit" value="Submit" />
+</form>
+</body>
+<br><br>
+
+
+<!This is the part which sets Query 3 on the front end>
+<body>
+<form name="pyform" method="POST" action="/cgi-bin/sailorsDB/query3.py">
+  <h3>Query 3: Given the pid, retrieve the names and addresses for the suppliers who charge the most for that part.</h3>
+  <h3>Please enter a pid for "Query 3"</h3>
+  <input type="text" name="pid" />
+  <input type="submit" name="submit" value="Submit" />
+</form>
+</body>
+<br><br>
+
+
+<!This is the part which sets Query 3 on the front end>
+<body>
+<form name="pyform" method="POST" action="/cgi-bin/sailorsDB/query4.py">
+  <h3>Query 4: Given the color and address, retrieve the names of the parts with that color 
+  which were supplied by all the suppliers in the given address.</h3>
+  <h3>Please enter a parts color and then a valid address for "Query 4"</h3>
+  <input type="text" name="color" />
+  <input type="text" name="address" />
+  <input type="submit" name="submit" value="Submit" />
+</form>
+</body>
+<br><br>
+
+
+
+
+<!This is the part which sets Query 5 on the front end>
+<body>
+<form name="pyform" method="POST" action="/cgi-bin/sailorsDB/query5.py">
+  <h3>Query 5: Given the address, retrieve the sids and names of the 
+  suppliers in that address who do not supply any part.</h3>
+  <h3>Please enter a valid address for "Query 5"</h3>
+  <input type="text" name="address" />
+  <input type="submit" name="submit" value="Submit" />
+</form>
+</body>
+
+</html>
